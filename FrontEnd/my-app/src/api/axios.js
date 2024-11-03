@@ -48,6 +48,6 @@ const fetchProducts = async () => {
 fetchProducts();
 // Export the configured Axios instance
 export default apiClient;
+export const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:81';
 
-
-export const baseURL ='http://localhost:80';
+export const baseURL ='http://localhost:81';
