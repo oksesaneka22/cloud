@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     // Use 'sh' step to execute shell commands
-                    sh 'docker run -d --network my_network -p 5034:80 back'
+                    sh 'docker run -d --network my_network -p 5034:5034 back'
                 }
             }
         }
