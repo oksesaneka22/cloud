@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     // Use 'sh' step to execute shell commands
-                    sh 'docker run -d --network my_network -p 80:80 front'
+                    sh 'docker run -d --network my_network -p 81:80 front'
                 }
             }
         }
