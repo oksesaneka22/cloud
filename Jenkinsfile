@@ -14,7 +14,6 @@ pipeline {
             steps {
                 script {
                     // Use 'sh' step to execute shell commands
-                    sh 'docker network create my_network'
                     sh 'docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Qwerty-1" --network my_network -p 1433:1433 --name sql111 --hostname sql1 -d mcr.microsoft.com/mssql/server:2022-latest'
                 }
             }
